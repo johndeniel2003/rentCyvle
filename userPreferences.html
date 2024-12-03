@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Preferences</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <nav class="bg-blue-500 text-white py-4 px-6 flex justify-between items-center">
+        <h1 class="text-xl font-bold flex items-center">
+            <i class="fas fa-car-alt mr-2"></i> VehicleHub
+        </h1>
+    </nav>
+
+    <!-- Preferences Section -->
+    <div class="max-w-lg mx-auto bg-white p-6 rounded-lg shadow-md mt-10">
+        <h2 class="text-2xl font-bold text-center mb-6">User Preferences</h2>
+        <form>
+            <!-- Vehicle Preferences -->
+            <div class="mb-4">
+                <label for="vehicle_type" class="block text-sm font-medium text-gray-700">Preferred Vehicle Type</label>
+                <select id="vehicle_type" name="vehicle_type" class="w-full px-4 py-2 mt-2 border rounded-md focus:ring-2 focus:ring-blue-400">
+                    <option value="car">Car</option>
+                    <option value="scooter">Scooter</option>
+                    <option value="motorcycle">Motorcycle</option>
+                    <option value="bicycle">Bicycle</option>
+                </select>
+            </div>
+
+            <!-- Location Preferences -->
+            <div class="mb-4">
+                <label for="location" class="block text-sm font-medium text-gray-700">Preferred Location</label>
+                <input type="text" id="location" name="location" class="w-full px-4 py-2 mt-2 border rounded-md focus:ring-2 focus:ring-blue-400" placeholder="Enter your preferred location" required />
+            </div>
+
+            <!-- Notification Preferences -->
+            <div class="mb-4">
+                <label for="notifications" class="block text-sm font-medium text-gray-700">Notification Preferences</label>
+                <div class="flex items-center">
+                    <input type="checkbox" id="email_notifications" name="email_notifications" class="mr-2">
+                    <label for="email_notifications" class="text-sm">Receive Email Notifications</label>
+                </div>
+                <div class="flex items-center mt-2">
+                    <input type="checkbox" id="sms_notifications" name="sms_notifications" class="mr-2">
+                    <label for="sms_notifications" class="text-sm">Receive SMS Notifications</label>
+                </div>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="w-full bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600">Save Preferences</button>
+        </form>
+    </div>
+
+</body>
+</html>

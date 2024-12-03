@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Detail</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"></script>
+</head>
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-blue-500 text-white py-4 px-6 flex justify-between items-center">
+        <h1 class="text-xl font-bold flex items-center">
+            <i class="fas fa-car-alt mr-2"></i> VehicleHub
+        </h1>
+        <div class="space-x-6 flex items-center">
+            <a href="#" class="flex items-center hover:underline">
+                <i class="fas fa-home mr-2"></i> Newsfeed
+            </a>
+            <a href="#" class="flex items-center hover:underline">
+                <i class="fas fa-user mr-2"></i> User Profile
+            </a>
+            <a href="#" class="flex items-center hover:underline">
+                <i class="fas fa-plus-circle mr-2"></i> Post Vehicle
+            </a>
+            <a href="#" class="flex items-center hover:underline relative">
+                <i class="fas fa-envelope mr-2"></i> Inbox
+                <span class="absolute top-0 right-0 bg-red-500 text-xs rounded-full px-1.5 text-white">3</span>
+            </a>
+            <a href="#" class="flex items-center hover:underline relative">
+                <i class="fas fa-bell mr-2"></i> Notifications
+                <span class="absolute top-0 right-0 bg-red-500 text-xs rounded-full px-1.5 text-white">5</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Vehicle Detail Content -->
+    <div class="container mx-auto p-6">
+        <!-- Vehicle Information -->
+        <div class="flex flex-col md:flex-row gap-6">
+            <!-- Vehicle Images -->
+            <div class="w-full md:w-1/2">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div id="vehicle-image-carousel" class="relative">
+                        <!-- Images -->
+                        <img src="https://via.placeholder.com/600x400" alt="Vehicle" class="w-full h-72 object-cover">
+                        <img src="https://via.placeholder.com/600x400" alt="Vehicle" class="w-full h-72 object-cover mt-2">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vehicle Details -->
+            <div class="w-full md:w-1/2">
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h2 class="text-2xl font-bold mb-2">Honda Civic 2020</h2>
+                    <p class="text-gray-600 text-sm mb-4">Type: Car | Price: $50/day</p>
+                    <p class="text-gray-800 mb-4">A reliable and comfortable sedan. Perfect for city and highway driving. Fuel-efficient with great safety features.</p>
+                    <p class="text-gray-800 mb-4"><strong>Owner:</strong> John Doe</p>
+                    <p class="text-gray-800 mb-4"><strong>Location:</strong> Los Angeles, CA</p>
+                    <button class="bg-blue-500 text-white px-4 py-2 rounded-md w-full hover:bg-blue-600">
+                        <i class="fas fa-comment mr-2"></i> Message Owner
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Detailed Description -->
+        <div class="mt-6 bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-semibold mb-4">Description</h3>
+            <p class="text-gray-700">This 2020 Honda Civic is in excellent condition. With a sleek design, great fuel efficiency, and plenty of space, it’s perfect for daily commutes and long road trips. The car features advanced safety systems like lane assist, automatic emergency braking, and more.</p>
+        </div>
+    </div>
+</body>
+</html>

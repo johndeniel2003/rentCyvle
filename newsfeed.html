@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsfeed</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"></script>
+</head>
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-blue-500 text-white py-4 px-6 flex justify-between items-center">
+        <!-- Logo -->
+        <h1 class="text-xl font-bold flex items-center">
+            <i class="fas fa-car-alt mr-2"></i> VehicleHub
+        </h1>
+        <!-- Navigation Links -->
+        <div class="space-x-6 flex items-center">
+            <a href="#" class="flex items-center hover:underline">
+                <i class="fas fa-home mr-2"></i> Newsfeed
+            </a>
+            <a href="#" class="flex items-center hover:underline">
+                <i class="fas fa-user mr-2"></i> User Profile
+            </a>
+            <a href="#" class="flex items-center hover:underline">
+                <i class="fas fa-plus-circle mr-2"></i> Post Vehicle
+            </a>
+            <a href="#" class="flex items-center hover:underline relative">
+                <i class="fas fa-envelope mr-2"></i> Inbox
+                <span class="absolute top-0 right-0 bg-red-500 text-xs rounded-full px-1.5 text-white">3</span>
+            </a>
+            <a href="#" class="flex items-center hover:underline relative">
+                <i class="fas fa-bell mr-2"></i> Notifications
+                <span class="absolute top-0 right-0 bg-red-500 text-xs rounded-full px-1.5 text-white">5</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Header with Search and Filter -->
+    <header class="bg-white py-4 px-6 shadow-md">
+        <div class="flex space-x-4">
+            <input type="text" placeholder="Search vehicles..." class="flex-1 px-4 py-2 border rounded-md focus:ring-2 focus:ring-blue-400" />
+            <select class="px-4 py-2 border rounded-md focus:ring-2 focus:ring-blue-400">
+                <option value="">Filter by type</option>
+                <option value="car">Car</option>
+                <option value="scooter">Scooter</option>
+                <option value="motorcycle">Motorcycle</option>
+                <option value="bicycle">Bicycle</option>
+            </select>
+            <button class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">
+                <i class="fas fa-search"></i> Search
+            </button>
+        </div>
+    </header>
+
+    <!-- Newsfeed Content -->
+    <div class="container mx-auto p-6">
+        <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <!-- Vehicle Card -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="https://via.placeholder.com/300x200" alt="Vehicle" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h2 class="text-lg font-bold mb-2">Honda Civic</h2>
+                    <p class="text-gray-600 text-sm mb-4">Type: Car | Price: $50/day</p>
+                    <p class="text-gray-800 mb-4">A reliable and comfortable sedan. Perfect for city and highway driving.</p>
+                    <p class="text-gray-700 text-sm mb-2"><strong>Owner:</strong> John Doe</p>
+                    <p class="text-gray-700 text-sm mb-4"><strong>Location:</strong> 123 Main St, Cityville</p>
+                    <button class="w-full bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600">Message Owner</button>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="https://via.placeholder.com/300x200" alt="Vehicle" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h2 class="text-lg font-bold mb-2">Honda Civic</h2>
+                    <p class="text-gray-600 text-sm mb-4">Type: Car | Price: $50/day</p>
+                    <p class="text-gray-800 mb-4">A reliable and comfortable sedan. Perfect for city and highway driving.</p>
+                    <p class="text-gray-700 text-sm mb-2"><strong>Owner:</strong> John Doe</p>
+                    <p class="text-gray-700 text-sm mb-4"><strong>Location:</strong> 123 Main St, Cityville</p>
+                    <button class="w-full bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600">Message Owner</button>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="https://via.placeholder.com/300x200" alt="Vehicle" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h2 class="text-lg font-bold mb-2">Honda Civic</h2>
+                    <p class="text-gray-600 text-sm mb-4">Type: Car | Price: $50/day</p>
+                    <p class="text-gray-800 mb-4">A reliable and comfortable sedan. Perfect for city and highway driving.</p>
+                    <p class="text-gray-700 text-sm mb-2"><strong>Owner:</strong> John Doe</p>
+                    <p class="text-gray-700 text-sm mb-4"><strong>Location:</strong> 123 Main St, Cityville</p>
+                    <button class="w-full bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600">Message Owner</button>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="https://via.placeholder.com/300x200" alt="Vehicle" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h2 class="text-lg font-bold mb-2">Honda Civic</h2>
+                    <p class="text-gray-600 text-sm mb-4">Type: Car | Price: $50/day</p>
+                    <p class="text-gray-800 mb-4">A reliable and comfortable sedan. Perfect for city and highway driving.</p>
+                    <p class="text-gray-700 text-sm mb-2"><strong>Owner:</strong> John Doe</p>
+                    <p class="text-gray-700 text-sm mb-4"><strong>Location:</strong> 123 Main St, Cityville</p>
+                    <button class="w-full bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600">Message Owner</button>
+                </div>
+            </div>
+                                                
+            
+            <!-- Repeat similar vehicle cards -->
+        </div>
+    </div>
+
+    
+</body>
+</html>
